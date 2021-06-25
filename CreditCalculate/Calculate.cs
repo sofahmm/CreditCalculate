@@ -66,7 +66,7 @@ namespace CreditCalculate
 
             double y = procent + Convert.ToDouble(NewT);
             double r = (procent / Convert.ToDouble(NewT) / d)*100;
-            MessageBox.Show(Convert.ToString(procent) ,"накопительные");
+            MessageBox.Show(Convert.ToString(procent) ,"Сумма процентов");
             MessageBox.Show(Convert.ToString(y), "Общая сумма выплаты");
             MessageBox.Show(Convert.ToString(r) + "%", "Эффективная ставка");
 

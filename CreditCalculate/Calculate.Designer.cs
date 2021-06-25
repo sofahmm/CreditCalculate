@@ -31,8 +31,8 @@
             this.tb_SumInRub = new System.Windows.Forms.TextBox();
             this.tb_ZimInDay = new System.Windows.Forms.TextBox();
             this.lbl_SumInRub = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.zaim_day = new System.Windows.Forms.Label();
+            this.Procent_day = new System.Windows.Forms.Label();
             this.tb_PrProcent = new System.Windows.Forms.TextBox();
             this.btn_rassch = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
@@ -66,24 +66,24 @@
             this.lbl_SumInRub.TabIndex = 3;
             this.lbl_SumInRub.Text = "Сумма займа в рублях";
             // 
-            // label2
+            // zaim_day
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Срок займа в днях";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.zaim_day.AutoSize = true;
+            this.zaim_day.Location = new System.Drawing.Point(55, 140);
+            this.zaim_day.Name = "zaim_day";
+            this.zaim_day.Size = new System.Drawing.Size(102, 13);
+            this.zaim_day.TabIndex = 4;
+            this.zaim_day.Text = "Срок займа в днях";
+            this.zaim_day.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // Procent_day
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 212);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Проценты по дням";
+            this.Procent_day.AutoSize = true;
+            this.Procent_day.Location = new System.Drawing.Point(12, 212);
+            this.Procent_day.Name = "Procent_day";
+            this.Procent_day.Size = new System.Drawing.Size(102, 13);
+            this.Procent_day.TabIndex = 5;
+            this.Procent_day.Text = "Проценты по дням";
             // 
             // tb_PrProcent
             // 
@@ -126,8 +126,8 @@
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_rassch);
             this.Controls.Add(this.tb_PrProcent);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Procent_day);
+            this.Controls.Add(this.zaim_day);
             this.Controls.Add(this.lbl_SumInRub);
             this.Controls.Add(this.tb_ZimInDay);
             this.Controls.Add(this.tb_SumInRub);
@@ -143,8 +143,8 @@
         private System.Windows.Forms.TextBox tb_SumInRub;
         private System.Windows.Forms.TextBox tb_ZimInDay;
         private System.Windows.Forms.Label lbl_SumInRub;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label zaim_day;
+        private System.Windows.Forms.Label Procent_day;
         private System.Windows.Forms.TextBox tb_PrProcent;
         private System.Windows.Forms.Button btn_rassch;
         private System.Windows.Forms.Button btn_save;
