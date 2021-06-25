@@ -1,6 +1,6 @@
 ﻿namespace CreditCalculate
 {
-    partial class Form1
+    partial class Calculate
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -35,6 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tb_PrProcent = new System.Windows.Forms.TextBox();
             this.btn_rassch = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // tb_SumInRub
@@ -102,11 +104,26 @@
             this.btn_rassch.UseVisualStyleBackColor = true;
             this.btn_rassch.Click += new System.EventHandler(this.btn_rassch_Click);
             // 
-            // Form1
+            // btn_save
+            // 
+            this.btn_save.Location = new System.Drawing.Point(286, 260);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(75, 23);
+            this.btn_save.TabIndex = 10;
+            this.btn_save.Text = "Сохранить";
+            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            // 
+            // Calculate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(374, 306);
+            this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_rassch);
             this.Controls.Add(this.tb_PrProcent);
             this.Controls.Add(this.label3);
@@ -114,8 +131,8 @@
             this.Controls.Add(this.lbl_SumInRub);
             this.Controls.Add(this.tb_ZimInDay);
             this.Controls.Add(this.tb_SumInRub);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Calculate";
+            this.Text = "CreditCalculate";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,6 +147,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_PrProcent;
         private System.Windows.Forms.Button btn_rassch;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
