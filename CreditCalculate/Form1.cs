@@ -17,26 +17,6 @@ namespace CreditCalculate
             InitializeComponent();
         }
 
-        private void tb_SumInRub_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_PrDay_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_rassch_Click(object sender, EventArgs e)
         {
             var day = tb_ZimInDay.Text;
@@ -61,7 +41,7 @@ namespace CreditCalculate
         }
         private void tb_ZimInDay_TextChanged(object sender, EventArgs e)
         {
-            var day = tb_ZimInDay.Text;
+
         }
         private void tb_PrProcent_TextChanged(object sender, EventArgs e)
         {
