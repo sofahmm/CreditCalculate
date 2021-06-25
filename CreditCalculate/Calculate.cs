@@ -20,7 +20,17 @@ namespace CreditCalculate
 
         private void tb_SumInRub_TextChanged(object sender, EventArgs e)
         {
+            var t = tb_SumInRub.Text;
+            try
+            {
+                t = "500001";
+                 MessageBox.Show("No!!");
+            }
 
+            catch
+            {
+
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -42,6 +52,8 @@ namespace CreditCalculate
         {
             var t = tb_SumInRub.Text;
             int NewT = Convert.ToInt32(t);
+           
+
 
             var day = tb_ZimInDay.Text;
             int d = Convert.ToInt32(day);
@@ -91,11 +103,7 @@ namespace CreditCalculate
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.Filter = "TXT(*.txt)|(*.TXT)";
-            if(saveFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                
-            }
+            
         }
 
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
